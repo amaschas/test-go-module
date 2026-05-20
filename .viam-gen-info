@@ -1,0 +1,13 @@
+{
+  "module_name": "test-go-module",
+  "visibility": "public",
+  "namespace": "alexi-staging-org",
+  "language": "go",
+  "resource_type": "service",
+  "resource_subtype": "generic",
+  "model_name": "test-go-module",
+  "initialize_git": false,
+  "generator_version": "0.1.0",
+  "generated_on": "2026-05-20T21:24:54.569502Z",
+  "module_readme_link": "README.md"
+}
