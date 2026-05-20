@@ -2,11 +2,12 @@
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "alexi-staging-org:test-go-module",
   "visibility": "public",
-  "url": "",
+  "url": "https://github.com/amaschas/test-go-module",
   "description": "Modular generic service: test-go-module",
   "applications": null,
   "markdown_link": "README.md",
   "entrypoint": "bin/test-go-module",
+  "language": "go",
   "first_run": "",
   "build": {
     "build": "make module.tar.gz",
