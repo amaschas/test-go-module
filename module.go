@@ -38,6 +38,7 @@ type Config struct {
 		If your model does not need a config, replace *Config in the init
 		function with resource.NoNativeConfig
 	*/
+	Dependency string `json:"dependency"`
 }
 
 // Validate ensures all parts of the config are valid and important fields exist.
@@ -51,8 +52,11 @@ type Config struct {
 // (for example, "components.0"). You can use it in error messages
 // to indicate which resource has a problem.
 func (cfg *Config) Validate(path string) ([]string, []string, error) {
-	// Add config validation code here
-	return nil, nil, nil
+	if cfg.Dependency == "" {
+		return nil, nil, fmt.Errorf("%s: missing required field 'dependency'", path)
+	}
+
+	return []string{cfg.Dependency}, nil, nil
 }
 
 type testGoModuleTestGoModule struct {
