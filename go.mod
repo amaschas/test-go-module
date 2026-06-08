@@ -2,7 +2,10 @@ module testgomodule
 
 go 1.25.1
 
-require go.viam.com/rdk v0.127.1
+require (
+	github.com/oklog/ulid/v2 v2.1.1
+	go.viam.com/rdk v0.127.1
+)
 
 require (
 	cloud.google.com/go v0.115.1 // indirect
