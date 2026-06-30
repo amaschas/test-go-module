@@ -6,6 +6,7 @@ import (
 	"fmt"
 
 	"github.com/oklog/ulid/v2"
+	"github.com/rs/xid"
 	"go.viam.com/rdk/logging"
 	"go.viam.com/rdk/resource"
 	generic "go.viam.com/rdk/services/generic"
@@ -103,7 +104,7 @@ func (s *testGoModuleTestGoModule) Name() resource.Name {
 
 func (s *testGoModuleTestGoModule) DoCommand(ctx context.Context, cmd map[string]interface{}) (map[string]interface{}, error) {
 	if _, ok := cmd["generate_id"]; ok {
-		return map[string]interface{}{"id": ulid.Make().String()}, nil
+		return map[string]interface{}{"id": ulid.Make().String(), "short_id": xid.New().String()}, nil
 	}
 
 	return nil, fmt.Errorf("%w: supported command is 'generate_id'", errUnimplemented)

@@ -4,6 +4,7 @@ go 1.25.1
 
 require (
 	github.com/oklog/ulid/v2 v2.1.1
+	github.com/rs/xid v1.6.0
 	go.viam.com/rdk v0.127.1
 )
 
@@ -136,7 +137,6 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rs/cors v1.11.1 // indirect
-	github.com/rs/xid v1.6.0 // indirect
 	github.com/samber/lo v1.51.0 // indirect
 	github.com/sergi/go-diff v1.4.0 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
