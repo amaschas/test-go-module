@@ -1,6 +1,6 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
-  "module_id": "5279410b-44b4-444e-9b4a-858c2c187c5e:test-go-module",
+  "module_id": "c5f14f54-d4bd-496d-a2f5-03048d1e79c0:test-go-module",
   "visibility": "public",
   "url": "https://github.com/amaschas/test-go-module",
   "description": "Modular generic service: test-go-module",
